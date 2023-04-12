@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: "Lora", sans-serif;
+}
+body {
+  background-image: url("/img/1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: var(--bg);
+  background-attachment: fixed;
+  margin: auto;
+  width: 80vw;
+}
+:root {
+  --font: #f6d860;
+  --font1: #ff7f3f;
+  --bg: #8fbdd3;
+  --hover: #939b62;
+}
+.navbar-nav {
+  display: flex;
+  justify-content: space-around;
+  background: var(--bg);
+}
+
+.navbar-nav .logo {
+  font-weight: 600;
+  font-size: 3rem;
+  color: var(--font1);
+  text-shadow: 2px 2px 2px var(--font);
+}
+.navbar-nav .logo span {
+  color: var(--font);
+  text-shadow: 2px 2px 2px var(--font1);
+  text-decoration: none;
+}
+.navbar-nav ul {
+  list-style: none;
+  cursor: pointer;
+  display: flex;
+}
+.navbar-nav ul li {
+  margin: 25px;
+  text-decoration: none;
+  position: relative;
+}
+.navbar-nav ul li a {
+  text-decoration: none;
+  list-style: none;
+  color: white;
+  font-weight: 500;
+  transition: 0.3s;
+}
+.navbar-nav ul li a:hover {
+  color: var(--hover);
+}
+.navbar-nav .dropdown {
+  display: none;
+}
+.navbar-nav ul li:hover .dropdown {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  background-color: var(--bg);
+  animation: 0.2s;
+  transition: 0.2s;
+}
+
+.hero {
+  background-color: var(--bg);
+  margin-top: 2rem;
+  text-align: center;
+}
+.hero .row {
+  display: flex;
+  justify-content: space-around;
+  margin: 0.4rem;
+  padding: 0.9rem;
+}
